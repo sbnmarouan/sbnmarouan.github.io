@@ -59,7 +59,12 @@ N’hésitez pas à me contacter pour échanger sur des projets, des idées ou d
       
       <div class="hero__cta">
         <a href="#projects" class="btn btn--primary">Voir mes travaux</a>
-        <a href="file:///C:/Users/Pc/Desktop/portfolio2/MonCV.pdf" class="btn" download>CV (PDF)</a>
+        <a href="./MonCV.pdf" class="btn" download>CV (PDF)</a>
+        <script>document.querySelector('#cv-link').addEventListener('click', (e) => {
+  e.preventDefault();
+  window.open('./MonCV.pdf', '_blank', 'noopener');
+});
+</script>
       </div>
     </section>
   </header>
