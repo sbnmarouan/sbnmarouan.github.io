@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marouane Souabni — Développeur Front-end</title>
+  <meta name="description" content="Développeur front-end. Projets web modernes, interfaces accessibles et performantes.">
+  <link rel="icon" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="./css/styles1.css" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Portfolio — Marouane Souabni">
+  <meta property="og:description" content="Projets front-end, UI accessibles, et études de cas.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-cover.jpg">
+  <meta property="og:url" content="https://exemple.com">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Marouane Souabni",
+    "jobTitle":"Front-end Developer",
+    "url":"https://exemple.com",
+    "sameAs":[
+      "https://github.com/ton-handle",
+      "https://www.linkedin.com/in/ton-handle/"
+    ]
+  }
+  </script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="Principale">
+      <a class="logo" href="#top" aria-label="Accueil — Marouane Souabni">
+        <span aria-hidden="true">MAROUANE</span><strong> SOUABNI</strong>
+      </a>
+
+      <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+      <ul id="site-nav" class="nav__list">
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#todo">To-Do</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#contact" class="btn">Travaillons ensemble</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <h1>Développeur mern stack</h1>
+      <p class="value-prop">J’aide à créer des interfaces web rapides, accessibles et élégantes — du prototype au déploiement. je crée de petits projets et je m’exerce à concevoir des interfaces (UI) propres et accessibles.
+
+Actuellement, je suis étudiant en génie logiciel, passionné par le développement web moderne et le design centré sur l’utilisateur. Je me spécialise en tant que développeur mern-stack, avec une expérience pratique dans la création d’applications de bout en bout et d’interfaces web interactives en utilisant des technologies front-end et back-end. J’aime me challenger avec de nouveaux outils et frameworks, collaborer sur des projets open source et appliquer les meilleures pratiques de code. Mon objectif est de livrer des solutions numériques robustes, évolutives et intuitives qui apportent une réelle valeur aux utilisateurs et contribuent positivement à la communauté tech.
+
+N’hésitez pas à me contacter pour échanger sur des projets, des idées ou des opportunités de collaboration !</p>
+      
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">Voir mes travaux</a>
+        <a href="file:///C:/Users/Pc/Desktop/portfolio2/MonCV.pdf" class="btn" download>CV (PDF)</a>
+      </div>
+    </section>
+  </header>
+
+  <main id="main">
+    <!-- ===== FEATURED ===== -->
+    <section class="section" id="featured" aria-labelledby="featured-title">
+      <div class="container">
+        <h2 id="featured-title">Travail mis en avant</h2>
+
+        <!-- Carte “photo + sous-titre” -->
+        <article class="feature-card" data-tech="html css js">
+          <a class="feature-card__media" href="#" data-open="case-study-hala">
+            <img loading="lazy" width="1600" height="900"
+                 src="marouane.png"
+                 alt="Capture d’écran de l’application Hala">
+          </a>
+          <div class="feature-card__meta">
+            <h3 class="feature-card__title">Hala — Vivez la CAN 2025</h3>
+            <p class="feature-card__subtitle">Cartes interactives, billetterie et suivi en temps réel.</p>
+            <ul class="tags" aria-label="Technologies">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="feature-card__actions">
+              <a href="#" class="btn">Live Demo</a>
+              <a href="#" class="btn">Code</a>
+              <button class="btn btn--ghost" data-open="case-study-hala">Étude de cas</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS GRID ===== -->
+    <section class="section section--dark" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 id="projects-title">Projets</h2>
+          <div class="filters" role="group" aria-label="Filtrer par technologie">
+            <button class="chip is-active" data-filter="all">Tout</button>
+            <button class="chip" data-filter="html">HTML</button>
+            <button class="chip" data-filter="css">CSS</button>
+            <button class="chip" data-filter="js">JavaScript</button>
+          </div>
+        </div>
+
+        <div class="grid" id="project-grid">
+          <!-- Carte projet existante -->
+          <article class="card" data-tech="html css">
+            <figure class="card__media">
+              <img loading="lazy" width="1200" height="675" src="p2.png" alt="Interface de réservation">
+              <figcaption class="card__caption">Réservation des visiteurs</figcaption>
+            </figure>
+            <div class="card__body">
+              <h3 class="card__title">Section visiteurs (tickets, zones fans)</h3>
+              <p class="card__desc">Parcours de réservation, états, focus clavier.</p>
+              <div class="card__actions">
+                <a class="btn" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-tech="html css js">
+            <figure class="card__media">
+              <img loading="lazy" width="1200" height="675" src="p4.png" alt="Page de connexion">
+              <figcaption class="card__caption">Login page</figcaption>
+            </figure>
+            <div class="card__body">
+              <h3 class="card__title">Phase d'accès à un espace personnel "Login"</h3>
+              <p class="card__desc">Formulaire validé côté client et composant accessible.</p>
+              <div class="card__actions">
+                <a class="btn" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Nouvelles cartes projets -->
+          <article class="card" data-tech="html css js">
+            <figure class="card__media">
+              <img loading="lazy" width="1200" height="675" src="Dash.png" alt="Tableau de bord organisateurs">
+              <figcaption class="card__caption">Dashboard organisateurs</figcaption>
+            </figure>
+            <div class="card__body">
+              <h3 class="card__title">Dashboard organisateurs</h3>
+              <p class="card__desc">Stats temps réel, filtres avancés, graphes accessibles.</p>
+              <div class="card__actions">
+                <a class="btn" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-tech="html css">
+            <figure class="card__media">
+              <img loading="lazy" width="1200" height="675" src="stade.png" alt="Carte interactive des stades">
+              <figcaption class="card__caption">Carte des stades</figcaption>
+            </figure>
+            <div class="card__body">
+              <h3 class="card__title">Carte des stades</h3>
+              <p class="card__desc">Pins, zones, modales et navigation clavier.</p>
+              <div class="card__actions">
+                <a class="btn" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-tech="html css js">
+            <figure class="card__media">
+              <img loading="lazy" width="1200" height="675" src="assets/placeholder/proj-5.webp" alt="Chat en temps réel: coming soon">
+              <figcaption class="card__caption">Chat en temps réel</figcaption>
+            </figure>
+            <div class="card__body">
+              <h3 class="card__title">Chat en temps réel</h3>
+              <p class="card__desc">Interface claire, état de saisie, annonces ARIA.</p>
+              <div class="card__actions">
+                <a class="btn" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-tech="html css">
+            <figure class="card__media">
+              <img loading="lazy" width="1200" height="675" src="assets/placeholder/proj-6.webp" alt="Landing page évènement: coming soon">
+              <figcaption class="card__caption">Landing page évènement</figcaption>
+            </figure>
+            <div class="card__body">
+              <h3 class="card__title">Landing page évènement</h3>
+              <p class="card__desc">Sections modulaires, animations douces, LCP optimisé.</p>
+              <div class="card__actions">
+                <a class="btn" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="center">
+          <button id="loadMore" class="btn btn--ghost">Charger plus</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TODO LIST ===== -->
+    <section id="todo" data-todo-root class="section" aria-labelledby="todo-title">
+      <div class="container">
+        <h2 id="todo-title">To-Do List</h2>
+
+        <form data-todo-form class="todo-form" autocomplete="off">
+          <label class="sr-only" for="todo-input">Nouvelle tâche</label>
+          <input id="todo-input" data-todo-input type="text" placeholder="Ajouter une tâche…" required />
+          <button type="submit" class="btn btn--primary">Ajouter</button>
+        </form>
+
+        <div class="todo-toolbar">
+          <span data-todo-counter aria-live="polite">0 restant(s)</span>
+          <div data-todo-filters class="filters" role="group" aria-label="Filtres">
+            <button type="button" class="chip is-active" data-filter="all">Tout</button>
+            <button type="button" class="chip" data-filter="active">À faire</button>
+            <button type="button" class="chip" data-filter="completed">Faites</button>
+          </div>
+          <button type="button" class="btn" data-todo-clear>Effacer les terminées</button>
+        </div>
+
+        <ul data-todo-list class="todo-list" aria-live="polite"></ul>
+      </div>
+    </section>
+
+    <!-- ===== ROADMAP ===== -->
+    <section class="section" id="roadmap" aria-labelledby="roadmap-title">
+      <div class="container">
+        <h2 id="roadmap-title">Learning roadmap</h2>
+        <ol class="timeline">
+          <li class="done"><span>JS Basics</span> — querySelector, events</li>
+          <li class="done"><span>DOM Projects</span> — mini-apps</li>
+          <li><span>Accessibilité</span> — focus, ARIA, contrastes</li>
+          <li><span>Performance</span> — lazy images, bundling</li>
+          <li><span>PWA</span> — manifest + SW</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section section--image" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Contact</h2>
+        <p>Tu veux collaborer ou discuter d’un projet ?</p>
+        <form class="contact" netlify method="POST" name="contact">
+          <input type="hidden" name="form-name" value="contact">
+          <label>Votre nom
+            <input required name="name" type="text" autocomplete="name">
+          </label>
+          <label>Email
+            <input required name="email" type="email" autocomplete="email">
+          </label>
+          <label>Type de projet
+            <select name="type">
+              <option>Site vitrine</option>
+              <option>App web</option>
+              <option>Refonte UI</option>
+              <option>Autre</option>
+            </select>
+          </label>
+          <label>Message
+            <textarea required name="message" rows="4"></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary">Envoyer</button>
+        </form>
+        <div class="socials">
+          <a href="mailto:sbnmarouane@gmail.com" aria-label="Email">Email</a> ·
+          <a href="https://www.linkedin.com/in/marouane-souabni-a10079385/" target="_blank" rel="noopener">LinkedIn</a> ·
+          <a href="https://github.com/sbnmarouan" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© 2025 Marouane Souabni</small>
+    <a class="back-to-top" href="#top">Haut de page ↑</a>
+  </footer>
+
+  <!-- Étude de cas (exemple) -->
+  <dialog class="modal" id="case-study-hala" aria-labelledby="modal-title-hala">
+    <article>
+      <header>
+        <h3 id="modal-title-hala">Hala — Étude de cas</h3>
+        <button class="modal__close" data-close aria-label="Fermer">×</button>
+      </header>
+      <p><strong>Contexte :</strong> app dédiée à la CAN 2025 (cartes, billetterie).</p>
+      <p><strong>Rôle :</strong> UI + intégration front.</p>
+      <p><strong>Impact :</strong> perf 90+ Lighthouse, navigation clavier.</p>
+      <footer>
+        <a class="btn" href="#" target="_blank">Live</a>
+        <a class="btn" href="#" target="_blank">Repo</a>
+      </footer>
+    </article>
+  </dialog>
+
+  <!-- JS modules -->
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
